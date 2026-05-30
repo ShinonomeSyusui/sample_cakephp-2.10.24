@@ -12,16 +12,6 @@ class Product extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'product_name' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				'message' => '商品名を入力してください。',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'price' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
