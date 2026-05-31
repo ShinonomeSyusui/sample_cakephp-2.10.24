@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2026 年 5 朁E31 日 11:25
+-- Generation Time: 2026 年 5 朁E31 日 11:31
 -- サーバのバージョン： 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `sample_cakephp2_10_24`
 --
+CREATE DATABASE IF NOT EXISTS `sample_cakephp2_10_24` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `sample_cakephp2_10_24`;
 
 -- --------------------------------------------------------
 
@@ -28,6 +30,7 @@ SET time_zone = "+00:00";
 -- テーブルの構造 `products`
 --
 
+DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `product_name` varchar(100) NOT NULL,
